@@ -12,6 +12,6 @@ public class CalculadoraSalario {
         double descuentoCaja = salarioTotal * 0.01;
         double totalDescuentos = descuentoSalud + descuentoPension + descuentoCaja;
         double salarioNeto = salarioTotal - totalDescuentos;
-        return Math.round(salarioNeto * 10) / 10.0;
+        return Math.round(salarioNeto);
     }
 }
